@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+        }
+    50% {
+        background-position: 100% 50%;
+        }
+    100% {
+        background-position: 0% 50%;
+        }
+    }
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background: rgb(255,203,219);
+    background: linear-gradient(229deg, rgba(255,203,219,1) 0%, rgba(216,191,216,1) 35%, rgba(255,160,122,1) 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    transform: 0.30s;
+
+}
+
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.card-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-body{
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-local{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+.card-titulo{
+    font-size: 32px;
+    margin: 15px 0;
+    color:#b8860b;
+}
+
+
+.card-texto{
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+    color: #a2757c;
+
+}
+
+
+.card-footer{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+.card-footer a{
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.card-1 .card-footer{
+    background-color: #f08080;
+}
+
+.card-1 .card-local{
+    color: #a2757c;
+}
+
+.card-2 .card-footer{
+    background-color: #f08080;
+}
+
+.card-2 .card-local{
+    color: #a2757c;
+}
+
+.card-3 .card-footer{
+    background-color: #f08080;
+}
+
+.card-3 .card-local{
+    color: #a2757c;
+}
+
+/* ANimação Hover */
+.card:hover{
+    transform: scale3d(1.1,1.1,1);
+}
+
+footer{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+    
+}
+
+.footer{
+    display: inline;
+    text-align: center;
+}
+
+.footer a{
+    
+    text-decoration: none;
+}
+

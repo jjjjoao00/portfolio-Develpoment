@@ -1,0 +1,110 @@
+body {
+	background-color: rgb(34, 34, 34);
+	color: white;  /**todos os elementos do body ficam brancos, menos link**/ 
+	font-family: 'Poppins', sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /**cria espaço ao entre os elementos ou divs //space-around cria espaço ao redor// **/
+	align-items: center;
+}
+
+#title{
+	flex-direction: column;
+	line-height: 10px;/**altera o espaçamento entre as linhas e palavras**/
+}
+
+
+
+li {
+	display: inline-block; /**todos os elementos dispostos em linha**/
+	margin: 20px;
+}
+
+a{
+	color: white;
+}
+
+/** insere responsividade nos links "muda de cor com o mouse" **/
+a:hover{
+	color: rgb(132, 14, 201);
+	transition: 0.3s all;
+}
+
+#inscrevaseBotao {
+	border: 2px solid rgb(132, 14, 201);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+
+#inscrevaseBotao:hover {
+	background-color: rgb(132, 14, 201);
+	color: white;
+}
+
+h1 {
+	font-weight: 200; /**" peso" da fonte**/
+}
+
+h2 {
+	font-size: 56px;
+	line-height: 10px;
+	font-family: 'Poppins', medium;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+span {
+	color: rgb(132, 14, 201);
+}
+
+p {
+	line-height: 20px;
+	max-width: 500px; /**largura maxima de um elementos**/
+	font-family: 'Poppins', sans-serif;
+}
+
+img{
+	width: 600px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+/** edita o formulario especifico pelo tipo**/
+#enviado{
+
+	width: 50%;
+	height: 50px;
+	background-color: rgb(132, 14, 201);
+	color: white;
+	font-weight: bold;
+
+}
+
+#enviado:hover{
+	cursor: pointer;  /**faz a setinha mudar para maozinha**/
+}
+
+input {
+	margin-top: 20px;
+	height: 20px;
+	padding: 15px;
+	border-radius: 20px;
+	border: none;
+	font-size: 15px;
+}
+
